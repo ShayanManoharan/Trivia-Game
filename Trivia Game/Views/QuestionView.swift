@@ -20,7 +20,12 @@ struct QuestionView: View {
             }
             ProgressBar(progress: 40)
             
-            
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Which is the largest freshwater lake in the world?")
+                    .font(.system(size: 20))
+                    .bold()
+                    .foregroundColor(.gray)
+            }
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
